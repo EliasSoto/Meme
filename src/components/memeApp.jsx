@@ -14,7 +14,7 @@ const MemeApp = () => {
   const { memes, estaCargando, cargarMasMemes, actualizarMemes } = useMemes();
   
   // Estado para el orden de los memes (por likes o por fecha)
-  const [orden, setOrden] = useState("top");  // "top" o "new"
+  const [orden, setOrden] = useState("new");  // "top" o "new"
 
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
   const [modalImagenVisible, setModalImagenVisible] = useState(false);
