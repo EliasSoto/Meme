@@ -1,0 +1,51 @@
+/* Estilos para el modal */
+.modal {
+  background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 20%; /* Ajusta el tamaño según lo necesites */
+
+    height: 400px; /* Ajuste automático de altura */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal_subir{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 30%; /* Ajusta el tamaño según lo necesites */
+
+    height: 400px; /* Ajuste automático de altura */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+  
+  .entrada-imagen {
+    position: absolute;
+    width: 135px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 50%; /* Esto posiciona el elemento al 50% de la izquierda del contenedor */
+    transform: translateX(-50%); /* Esto ajusta el elemento para que esté centrado correctamente */
+
+  }
+  
+ 
+ /* Ocultar el mensaje "Ningún archivo seleccionado" */
+.entrada-imagen {
+  display: block;
+
+}
+

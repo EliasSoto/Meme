@@ -1,0 +1,106 @@
+/* src/EstilosElementoMeme.css */
+.contenedorMeme {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  display: flex; /* Cambio a flexbox */
+  flex-direction: column; /* Coloca los elementos en columna */
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 60px;
+  width: 50%;
+  box-shadow: 10px 10px 40px #bebebe, -20px -20px 60px #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .contenedorMeme {
+    width: 80%;
+  }
+}
+
+.contenedorMeme:hover {
+  transform: scale(1.01);  
+  box-shadow: 30px 30px 80px #bebebe, -30px -30px 80px #ffffff;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.descripcion {
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.imagen {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.cierreSeccion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* Esto empuja la sección hacia abajo */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.meGusta {
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.meGusta:hover {
+  opacity: 0.8;
+}
+
+.meGusta:hover .corazon {
+  animation: pulsar 0.6s ease-out infinite;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.corazon {
+  font-size: 24px;
+  margin-right: 8px;
+  align-items: center;
+}
+
+.usuario {
+  font-size: 14px;
+  color: #555;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+}

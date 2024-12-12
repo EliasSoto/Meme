@@ -1,0 +1,28 @@
+.fondo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal_registrar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 20%; /* Ajusta el tamaño según lo necesites */
+
+    height: 400px; /* Ajuste automático de altura */
+    text-align: center;
+    
+  }
+  
+ .error-message{
+  margin-bottom: 10px;
+  color: orangered;
+ }

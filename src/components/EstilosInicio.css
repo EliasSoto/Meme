@@ -1,0 +1,60 @@
+.fila-memes {
+    display: flex;
+    justify-content: space-between;  /* Para espaciar los memes equitativamente */
+    width: 90%;
+    gap: 40px;  /* Espacio entre los memes */
+    margin-left: 5%;
+    
+    
+  }
+  
+  .elemento-meme {
+    width: calc(10% - 5px);  /* Cada meme ocupa el 50% del ancho menos el espacio entre ellos */
+    box-sizing: border-box;
+  }
+  
+  .botones-titulo{
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    height: 80px;
+    gap: 10px;  /* Espacio entre los botones */
+    
+  }
+
+
+  .boton_top {
+    height: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    position: relative; /* Necesario para posicionar la línea debajo del botón */
+    font-size: 18px;
+    font-weight: 60;
+  }
+  .boton_top {
+    height: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease; /* Suaviza la transición */
+  }
+  
+  .boton_top:hover {
+    color:gray;
+    transform: scale(1.2); /* Agranda el botón */
+  }
+  
+  .select{
+    height: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    position: relative; /* Necesario para posicionar la línea debajo del botón */
+    outline: none; /* Elimina el borde al hacer clic o al enfocar */
+  }
+
+  .titulo_meme{
+    position: absolute;
+    margin-left: 20px;
+  }
